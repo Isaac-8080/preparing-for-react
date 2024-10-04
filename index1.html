@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Composition</title>
+</head>
+<body>
+  
+  <h1>Definition: Function composition is the process of combining two or more functions where the output of one function becomes the input to another.</h1>
+
+  <input type="text" name="" id="name">
+  <button id="greet" onclick="extraText()">greet</button>
+
+  <script>
+
+    // Definition: Function composition is the process of combining two or more functions where the output of one function becomes the input to another.
+
+    const usersName = document.getElementById('name');
+
+    function greetUser(usersName) { //func to display greeting message
+      
+      return (`Hello ${usersName}!`);
+      
+    }
+
+    function extraText() { //func to display greeting message and additonal text (combines func1 and func2)
+      
+      const greetings = greetUser(usersName.value);
+
+      console.log(`${greetings}, how are you?`);
+
+    }
+    
+  </script>
+
+</body>
+</html>
