@@ -32,3 +32,48 @@ const person = {
   }
 }
 console.log(person);
+
+
+// 4 ) Array of Objects
+// Create an array named students that contains at least three objects. Each object should represent a student with the following properties:
+// name: a string representing the student's name
+// age: a number representing the student's age
+// grade: a string representing the student's grade (e.g., "A", "B", "C", etc.)
+// isEnrolled: a boolean indicating whether the student is currently enrolled (true or false)
+
+const students = [
+  {
+    name: 'John',
+    age: 16,
+    grade: 'C',
+    isEnrolled: true
+  },
+
+  {
+    name: 'Doe',
+    age: 21,
+    grade: 'B',
+    isEnrolled: true
+  },
+
+  {
+    name: 'Felix',
+    age: 23,
+    grade: 'D',
+    isEnrolled: false
+  },
+  
+  {
+    name: 'Gifty',
+    age: 10,
+    grade: 'A',
+    isEnrolled: true
+  },
+]
+
+// Accessing Properties: Log the name and grade of each student in the array to the console.
+students.forEach(student => {
+  
+  console.log(`${student.name} : ${student.grade}`);
+
+});
